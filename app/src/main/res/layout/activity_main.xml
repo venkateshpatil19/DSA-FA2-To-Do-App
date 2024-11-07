@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add a New Task"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/taskNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Name"
+            android:inputType="textCapSentences"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:textColorHint="#424141"
+            android:textColor="#232222"/>
+
+        <EditText
+            android:id="@+id/taskPriorityInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Priority"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/edit_text"
+            android:textColorHint="#424141"
+            android:textColor="#232222"/>
+
+        <EditText
+            android:id="@+id/taskDeadlineInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Task Deadline (yyyy-MM-dd)"
+            android:focusable="false"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/edit_text"
+            android:textColorHint="#424141"
+            android:textColor="#232222"/>
+
+        <Button
+            android:id="@+id/addTaskButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Task"
+            android:layout_marginTop="12dp"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:backgroundTint="#4CAF50" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Task"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp"
+            android:textColor="#333333" />
+
+        <EditText
+            android:id="@+id/searchTaskInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Task by Name"
+            android:inputType="textCapSentences"
+            android:padding="10dp"
+            android:background="@android:drawable/edit_text"
+            android:textColorHint="#424141"
+            android:textColor="#232222"/>
+
+        <Button
+            android:id="@+id/searchTaskButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search Task"
+            android:layout_marginTop="8dp"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:backgroundTint="#3F51B5" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#BDBDBD"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/viewAllTasksButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="View All Tasks"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:backgroundTint="#FF9800"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tasks"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="#333333"
+            />
+
+        <LinearLayout
+            android:id="@+id/taskDisplayLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:textColorHint="#424141"
+            android:textColor="#232222"/>
+
+    </LinearLayout>
+</ScrollView>
